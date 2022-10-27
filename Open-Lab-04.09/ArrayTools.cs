@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Linq;
 
 namespace Open_Lab_04._09
 {
@@ -6,7 +7,10 @@ namespace Open_Lab_04._09
     {
         public string[] RemoveDups(string[] strings)
         {
-            throw new NotImplementedException();
+            
+            var ans = strings.Distinct().ToArray();
+            return ans;
+            
         }
     }
 }
